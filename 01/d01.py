@@ -15,8 +15,7 @@ test_data = '''1000
 
 10000'''
 
-def calculate_calories(raw_calories):
-    raw_elves = raw_calories.split('\n\n')
+def calculate_calories(raw_elves):
     elves = []
     for elf in raw_elves:
         score = sum(int(cal) for cal in elf.split('\n'))
@@ -32,12 +31,14 @@ def top_n_elves(elves, n):
 
 
 print('Testing...')
-elves = calculate_calories(test_data)
+raw_elves = test_data.split('\n\n')
+elves = calculate_calories(raw_elves)
 print('Top elf:', best_elf(elves) == 24000)
 print('Top 3 elves:', top_n_elves(elves, 3) == 45000)
 
 print('Solution...')
+
 with open('inp', mode='r') as inp:
-    elves = calculate_calories(inp.read())
+    elves = calculate_calories(inp.read().split('\n\n'))
     print('Top elf:', best_elf(elves))
     print('Top 3 elves:', top_n_elves(elves, 3))
