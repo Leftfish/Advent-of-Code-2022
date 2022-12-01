@@ -10,4 +10,4 @@ Let's see if I can do it three times in a row...
 
 Things I **L**earned, **R**evised or **I**mproved at in 2022:
 
-* [Day 1](01/d01.py): debugging stupid mistakes (**R**) and not using list comprehensions to improve readability (**R**)
+* [Day 1 Python](01/d01.py)|[Day 1 Java](01/Day01.java): debugging stupid mistakes (**R**) and not using list comprehensions to improve readability (**R**) in Python; reading a text file with BufferedReader (**L**) and sorting with Collections.sort (**L**) in Java
