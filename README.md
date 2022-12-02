@@ -11,4 +11,4 @@ Let's see if I can do it three times in a row...
 Things I **L**earned, **R**evised or **I**mproved at in 2022:
 
 * [Day 1 Python](01/d01.py) | [Day 1 Java](01/Day01.java): debugging stupid mistakes (**R**) and not using list comprehensions to improve readability (**R**) in Python; reading a text file with BufferedReader (**L**) and sorting with Collections.sort (**L**) in Java
-* [Day 2 Python](02/d02.py): not repeating myself (**R**) in Python
+* [Day 2 Python](02/d02.py) | [Day 2 Java](02/Day02.java): not repeating myself (**R**) in Python (Gosh, what an ugly solution); using HashMaps(**R**) in Java
