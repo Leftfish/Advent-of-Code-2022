@@ -1,43 +1,54 @@
+from enum import IntEnum
+
 print('Day 2 of Advent of Code!')
 
-ROCK, PAPER, SCISSORS = 1, 2, 3
-LOSE, DRAW, WIN = 0, 3, 6
+class Play(IntEnum):
+    ROCK = 1
+    PAPER = 2
+    SCISSORS = 3
+    
+    @property
+    def beats(self):
+        rules = {Play.ROCK: Play.SCISSORS, Play.SCISSORS: Play.PAPER, Play.PAPER: Play.ROCK}
+        return rules[self]
 
-RULES = {ROCK: PAPER, PAPER: SCISSORS, SCISSORS: ROCK}
-REVERSE_RULES = {v: k for k, v in RULES.items()}
+    @property
+    def loses_to(self):
+        rules = {Play.SCISSORS: Play.ROCK, Play.PAPER: Play.SCISSORS, Play.ROCK: Play.PAPER}
+        return rules[self]
 
-PLAYS = {'A': ROCK, 'X': ROCK, 'B': PAPER, 'Y': PAPER, 'C': SCISSORS, 'Z': SCISSORS}
-SECRET_PLAYS = {'A': ROCK, 'B': PAPER, 'C': SCISSORS, 'X': LOSE, 'Y': DRAW, 'Z': WIN}
+class Result(IntEnum):
+    LOSE = 0
+    DRAW = 3
+    WIN = 6
+
+PLAYS = {'A': Play.ROCK, 'X': Play.ROCK, 'B': Play.PAPER, 'Y': Play.PAPER, 'C': Play.SCISSORS, 'Z': Play.SCISSORS} 
+SECRET_PLAYS = {'A': Play.ROCK, 'B': Play.PAPER, 'C': Play.SCISSORS, 'X': Result.LOSE, 'Y': Result.DRAW, 'Z': Result.WIN}
 
 def parse_rounds(raw_rounds):
     return [play.split() for play in raw_rounds]
 
-def play_round(rnd, playbook, scoring):
-    opp, plr = playbook[rnd[0]], playbook[rnd[1]]
-    return scoring(opp, plr)
-
-def score_part1(opp, plr):
-    score = plr
-    if opp == plr:
-        score += DRAW
-    elif RULES[plr] == opp:
-        score += LOSE
+def score_part1(opponent_shape, player_shape): 
+    if player_shape.beats == opponent_shape:
+        return player_shape + Result.WIN
+    elif opponent_shape.beats == player_shape:
+        return player_shape + Result.LOSE
     else:
-        score += WIN
-    return score
+        return player_shape + Result.DRAW
 
-def score_part2(opp, plr):
-    score = plr
-    if plr == LOSE:
-        score += REVERSE_RULES[opp]
-    elif plr == DRAW:
-        score += opp
-    elif plr == WIN:
-        score += RULES[opp]
-    return score
+def score_part2(opponent_shape, player_strategy):
+    if player_strategy == Result.WIN:
+        return player_strategy + opponent_shape.loses_to
+    elif player_strategy == Result.LOSE:
+        return player_strategy + opponent_shape.beats
+    elif player_strategy == Result.DRAW:
+        return player_strategy + opponent_shape
 
-def play_all(rounds, round_rules, playbook, scoring):
-    return sum(round_rules(rnd, playbook, scoring) for rnd in rounds)
+def play_all(rounds, playbook, score_calculator):
+    def single_round(pair_of_plays):
+        return (playbook[pair_of_plays[0]], playbook[pair_of_plays[1]])
+    
+    return sum(score_calculator(*single_round(pair_of_plays)) for pair_of_plays in rounds)
 
 test_data = '''A Y
 B X
@@ -45,12 +56,11 @@ C Z'''
 
 print('Testing...')
 rounds = parse_rounds(test_data.splitlines())
-print('Normal rules:', play_all(rounds, play_round, PLAYS, score_part1) == 15)
-print('Weird secret rules:', play_all(rounds, play_round, SECRET_PLAYS, score_part2) == 12)
-
+print('Normal rules:', play_all(rounds, PLAYS, score_part1) == 15)
+print('Weird secret rules:', play_all(rounds, SECRET_PLAYS, score_part2) == 12)
 
 print('Solution...')
 with open('inp', mode='r') as inp:
     rounds = parse_rounds(inp.readlines())
-    print('Normal rules:', play_all(rounds, play_round, PLAYS, score_part1))
-    print('Weird secret rules:', play_all(rounds, play_round, SECRET_PLAYS, score_part2))
+    print('Normal rules:', play_all(rounds, PLAYS, score_part1))
+    print('Weird secret rules:', play_all(rounds,  SECRET_PLAYS, score_part2))
