@@ -2,7 +2,7 @@ print('Day 3 of Advent of Code!')
 
 SCORES = {}
 
-for i in range(65, 122+1):
+for i in range(ord('A'), ord('z') + 1):
     SCORES[chr(i)] = i - 38 if chr(i).isupper() else i - 96
 
 def calculate_rucksacks_priority(line):
