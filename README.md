@@ -16,3 +16,4 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 2 Python](02/d02.py) | [Day 2 Java](02/Day02.java): using Enum and IntEnum in Python (**L**); using HashMaps in Java (**R**)
 * [Day 3 Python](03/d03.py) | [Day 3 Java](03/Day03.java): set operations in Python (**R**); using streams in Java (**L**)
 * [Day 4 Python](04/d04.py) | [Day 4 Java](04/Day04.java): regular expressions (**R**) in Python and in Java (**L**)
+* [Day 5 Python](05/d05.py): using lists as stacks in Python (**R**)
