@@ -2,8 +2,7 @@ print('Day 6 of Advent of Code!')
 
 def check(data, step):
     for i in range(len(data)):
-        chunk = data[i:i+step]
-        if len(chunk) == len(set(chunk)):
+        if len(set(data[i:i+step])) == step:
             return i + step
 
 print('Testing...')
