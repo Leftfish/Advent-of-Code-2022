@@ -17,3 +17,4 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 3 Python](03/d03.py) | [Day 3 Java](03/Day03.java): set operations in Python (**R**); using streams in Java (**L**)
 * [Day 4 Python](04/d04.py) | [Day 4 Java](04/Day04.java): regular expressions (**R**) in Python and in Java (**L**)
 * [Day 5 Python](05/d05.py): using lists as stacks in Python (**R**)
+* [Day 6 Python](06/d06.py): set operations in Python (**R**)
