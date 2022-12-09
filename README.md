@@ -20,3 +20,4 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 6 Python](06/d06.py): set operations in Python (**R**)
 * [Day 7 Python](07/d07.py): defaultdict in Python (**R**) and that sometimes even if DFS looks like a go-to solution, it is not necessary it
 * [Day 8 Python](08/d08.py): functools.reduce in Python (**R**)
+* [Day 9 Python](09/d09.py): Manhattan distance (**R**)
