@@ -13,7 +13,7 @@ class Graph:
         def is_in_board(i, j):
             return len(data) > i >= 0 and len(data[0]) > j >= 0
         
-        self.heights = data
+        self.heights = data # probably unnecessary
         self.edges = defaultdict(list)
         self.start, self.end = None, None
         
@@ -36,7 +36,7 @@ class Graph:
                             self.edges[(i, j)].append(neighbor)
                         
     def find_distances(self, start):
-        distances = {vertex:float('inf') for vertex in self.edges}
+        distances = {}
         distances[start] = 0
         visited = set()
         
@@ -47,7 +47,7 @@ class Graph:
             visited.add(current_vertex)
 
             for neighbor in self.edges[current_vertex]:
-                if self.heights[neighbor[0]][neighbor[1]] == END:
+                if neighbor == self.end:
                     distances[neighbor] = distances[current_vertex] + STEP
                     self.distances = distances
                     return                
