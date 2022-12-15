@@ -26,3 +26,4 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 12 Python](12/d12.py): unweighted graphs (**R**) and BFS (**R**)
 * [Day 13 Python](13/d13.py): recursive functions (**R**), writing custom comparators (**I**) and using functools.cmp_to_key (**L**)
 * [Day 14 Python](14/d14.py): using sets to store positions on 2D grid (**R**)
+* [Day 15 Python](15/d15.py): Manhattan distance a.k.a. taxicab geometry (**R**)
