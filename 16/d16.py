@@ -78,7 +78,11 @@ class ElephantTetris:
         self.current_rock = None
         self.rock_counter = 0
         self.gas_jets = cycle(gas_jets)
+        self.total_gas_jets = len(gas_jets)
         self.rocks_cycle = cycle(ROCKS_CYCLE)
+        self.horizontal_moves = 0
+        self.moves_to_rocks = {}
+        self.dejavus = ''
 
     def update_top(self):
         return min(i for i, j in self.occupied_spaces) - 1
@@ -90,6 +94,16 @@ class ElephantTetris:
     def move_rock(self):
         next_jet = next(self.gas_jets)
         horizontal_move = JETS[next_jet]
+        
+        self.horizontal_moves += 1
+        jet_id = self.horizontal_moves % self.total_gas_jets
+        #print(jet_id, horizontal_move, jet_id in self.moves_to_rocks)
+
+        if jet_id not in self.moves_to_rocks:
+            self.moves_to_rocks[jet_id] = self.current_rock.shape
+        elif self.moves_to_rocks[jet_id] == self.current_rock.shape:
+            self.dejavus += f'\nDEJA VU {jet_id} {self.current_rock} at {self.rock_counter}. Current height: {abs(self.top_unoccupied)}'
+            # this adds to a string that can be saved and visually scanned for repeating patterns...
 
         pushed_by_jets = self.current_rock.move(horizontal_move, self.occupied_spaces)
         moved_down = self.current_rock.move(Directions.DOWN, self.occupied_spaces)
@@ -97,9 +111,7 @@ class ElephantTetris:
         #print(f'Pushed {horizontal_move}? {pushed_by_jets}')
         #print(f'Moved down? {moved_down}')
         
-        if not moved_down:
-            #print('ROCK STOPPED', self.current_rock)
-             
+        if not moved_down:             
             for coord in self.current_rock.coords:
                 self.occupied_spaces.add(tuple(coord))
             self.top_unoccupied = self.update_top()
@@ -113,10 +125,9 @@ class ElephantTetris:
                 self.drop_rock()
             while True:
                 move_done = self.move_rock()
-                if move_done:
-                    pass 
                 if not move_done:
                     break
+        
 
 jets = '>>><<><>><<<>><>>><<<>>><<<><<<>><>><<>>'
 
@@ -131,3 +142,5 @@ with open('inp', mode='r') as inp:
     real_game = ElephantTetris(data)
     real_game.play(2022)
     print('Tower after 2022 rounds:', abs(real_game.top_unoccupied))
+
+print('Part 2 solved manually by tracking when rocks and jets start to repeat themselves and then calculating the value thanks to a repeating pattern.')
