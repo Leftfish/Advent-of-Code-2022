@@ -8,7 +8,7 @@ Again I tried to find out how far I can make it in [Advent of Code](https://adve
 
 Let's see if I can do it three times in a row...
 
-During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints and help from the awesome AoC community with day 11 (part 2).
+During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints and help from the awesome AoC community with day 11 (part 2). Some visualisations of day 17 helped me debug my code, and convinced me I was on the right track to solve the puzzle.
 
 Things I **L**earned, **R**evised or **I**mproved at in 2022:
 
@@ -28,4 +28,5 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 14 Python](14/d14.py): using sets to store positions on 2D grid (**R**)
 * [Day 15 Python](15/d15.py): Manhattan distance a.k.a. taxicab geometry (**R**)
 * Day 16: TO DO
-* [Day 17 Python](17/d17.py): using Enum and itertools.cycle in Python (**I**), detecting collisions on 2D grid (**L**) and using Python as a calculator for part 2 ;)
+* [Day 17 Python](17/d17.py): using Enum and itertools.cycle in Python (**I**), detecting collisions on 2D grid (**L**) and using Python as a hand calculator for part 2 ;)
+* [Day 18 Python](18/d18.py): set operations (**R**) and BFS in 3D space (**L**)
