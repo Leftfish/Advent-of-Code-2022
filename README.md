@@ -30,3 +30,5 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * Day 16: TO DO
 * [Day 17 Python](17/d17.py): using Enum and itertools.cycle in Python (**I**), detecting collisions on 2D grid (**L**) and using Python as a hand calculator for part 2 ;)
 * [Day 18 Python](18/d18.py): set operations (**R**) and BFS in 3D space as a flood-fill function (**L**)
+* Day 19: TO DO
+* [Day 20 Python](20/d20.py): modular arithmetic (**I**) and circular doubly-linked lists (**R**)
