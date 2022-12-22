@@ -8,7 +8,7 @@ Again I tried to find out how far I can make it in [Advent of Code](https://adve
 
 Let's see if I can do it three times in a row...
 
-During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints and help from the awesome AoC community with day 11 (part 2). Some visualisations of day 17 helped me debug my code, and convinced me I was on the right track to solve the puzzle.
+During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints from the awesome AoC community with day 11 (part 2) and day 21 (part 2). Some visualisations of day 17 helped me debug my code, and convinced me I was on the right track to solve the puzzle.
 
 Things I **L**earned, **R**evised or **I**mproved at in 2022:
 
@@ -32,3 +32,4 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 18 Python](18/d18.py): set operations (**R**) and BFS in 3D space as a flood-fill function (**L**)
 * Day 19: TO DO
 * [Day 20 Python](20/d20.py): modular arithmetic (**I**) and circular doubly-linked lists (**R**)
+* [Day 21 Python](21/d21.py): recursion (**R**) and binary search for part 2 (**R**)
