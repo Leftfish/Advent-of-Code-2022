@@ -33,3 +33,5 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * Day 19: TO DO
 * [Day 20 Python](20/d20.py): modular arithmetic (**I**) and circular doubly-linked lists (**R**)
 * [Day 21 Python](21/d21.py): recursion (**R**) and binary search for part 2 (**R**)
+* [Day 22 Python part 1](22/d22.py): traversing 2D grids (**R**)
+* [Day 23 Python](23/d23.py): set operations (**R**) and enums (**R**)
