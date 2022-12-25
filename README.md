@@ -6,9 +6,9 @@ Again I tried to find out how far I can make it in [Advent of Code](https://adve
 * [2020](https://github.com/Leftfish/Advent-of-Code-2020): 25 days for the first time!
 * [2021](https://github.com/Leftfish/Advent-of-Code-2021): 25 days for the second time!
 
-Let's see if I can do it three times in a row...
+During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints from the awesome AoC community with day 11 (part 2), day 21 (part 2) and day 24 (to debug my A*). Some visualisations of day 17 helped me debug my code, and convinced me I was on the right track to solve the puzzle. 
 
-During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints from the awesome AoC community with day 11 (part 2) and day 21 (part 2). Some visualisations of day 17 helped me debug my code, and convinced me I was on the right track to solve the puzzle.
+As of 25.12.2022 - I have 44 stars which is more/less on par with previous years. Five puzzles (2.5 'days') to go.
 
 Things I **L**earned, **R**evised or **I**mproved at in 2022:
 
@@ -26,12 +26,14 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 12 Python](12/d12.py): unweighted graphs (**R**) and BFS (**R**)
 * [Day 13 Python](13/d13.py): recursive functions (**R**), writing custom comparators (**I**) and using functools.cmp_to_key (**L**)
 * [Day 14 Python](14/d14.py): using sets to store positions on 2D grid (**R**)
-* [Day 15 Python](15/d15.py): Manhattan distance a.k.a. taxicab geometry (**R**)
+* [Day 15 Python](15/d15.py): Manhattan distance (**R**)
 * Day 16: TO DO
 * [Day 17 Python](17/d17.py): using Enum and itertools.cycle in Python (**I**), detecting collisions on 2D grid (**L**) and using Python as a hand calculator for part 2 ;)
 * [Day 18 Python](18/d18.py): set operations (**R**) and BFS in 3D space as a flood-fill function (**L**)
 * Day 19: TO DO
 * [Day 20 Python](20/d20.py): modular arithmetic (**I**) and circular doubly-linked lists (**R**)
 * [Day 21 Python](21/d21.py): recursion (**R**) and binary search for part 2 (**R**)
-* [Day 22 Python part 1](22/d22.py): traversing 2D grids (**R**)
+* [Day 22 Python part 1](22/d22.py): traversing 2D grids (**R**), part 2 TO DO
 * [Day 23 Python](23/d23.py): set operations (**R**) and enums (**R**)
+* [Day 24 Python](24/d24.py): finding the shortest path using A* (**I**) with heapq (**R**) and using modulo to calculate positions of repeating patterns (**I**)
+* [Day 25 Python](25/d25.py): balanced signed-digit representations of integers (**L**)
