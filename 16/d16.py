@@ -111,7 +111,7 @@ def go_with_elephant(start, usable_valves, max_time=26):
     my_path = None
     elephant_path = None
 
-    solutions, _, __ = go_alone(AA, usable_valves, 26)
+    solutions, _, __ = go_alone(start, usable_valves, max_time)
     
     for solution in solutions:
         valves = frozenset(solution)
