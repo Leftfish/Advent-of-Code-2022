@@ -6,7 +6,7 @@ Again I tried to find out how far I can make it in [Advent of Code](https://adve
 * [2020](https://github.com/Leftfish/Advent-of-Code-2020): 25 days for the first time!
 * [2021](https://github.com/Leftfish/Advent-of-Code-2021): 25 days for the second time!
 
-During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints from the awesome AoC community with days 11 (part 2), 16, 21 (part 2) and 24.
+During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints from the awesome AoC community with days 11 (part 2), 16, 19 (part 1), 21 (part 2) and 24.
 
 As of 25.12.2022 I had 44 stars which is more/less on par with previous years. Still three puzzles (1.5 'days') to go.
 
@@ -30,7 +30,7 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 16 Python](16/d16.py): iterative BFS (**R**) and iterative DFS (**I**), using frozenset as key (**R**)
 * [Day 17 Python](17/d17.py): using Enum and itertools.cycle in Python (**I**), detecting collisions on 2D grid (**L**) and using Python as a hand calculator for part 2 ;)
 * [Day 18 Python](18/d18.py): set operations (**R**) and BFS in 3D space as a flood-fill function (**L**)
-* Day 19: TO DO
+* [Day 19 Python](19/d19.py): iterative BFS (**R**) and pruning branches (**L**)
 * [Day 20 Python](20/d20.py): modular arithmetic (**I**) and circular doubly-linked lists (**R**)
 * [Day 21 Python](21/d21.py): recursion (**R**) and binary search for part 2 (**R**)
 * [Day 22 Python part 1](22/d22.py): traversing 2D grids (**R**), part 2 TO DO
