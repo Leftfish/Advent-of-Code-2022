@@ -244,7 +244,7 @@ print('Testing signal strengths...', sum(C.signal_strenghts.values()) == 13140)
 print('Testing CRT...')
 C.screen.display()
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     test_data = inp.read()
     C = CPU()

@@ -89,7 +89,7 @@ pairs = get_pairs(test_data)
 print('Sum of indices of proper pairs:', sum_proper_packets(pairs) == 13)
 print('Decoder key:', get_decoder_key(pairs) == 140)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     pairs = get_pairs(inp.read())
     print('Sum of indices of proper pairs:', sum_proper_packets(pairs))

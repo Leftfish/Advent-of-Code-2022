@@ -118,7 +118,7 @@ rounds = 10000
 modifier = reduce(mul, [monkey.divisibility for monkey in monkeys], 1)
 print('Insane worry levels:', simulate(monkeys, rounds, modifier) == 2713310158)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     data = inp.read()
     monkeys = make_monkeys(data)

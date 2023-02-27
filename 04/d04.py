@@ -32,7 +32,7 @@ print('How many where one contains the other?', counter(raw_data, check_if_conta
 print('How many overlapping?', counter(raw_data, check_if_overlaps) == 4)
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     raw_data = inp.readlines()
     print('How many where one contains the other?', counter(raw_data, check_if_contains))
     print('How many overlapping?', counter(raw_data, check_if_overlaps))

@@ -68,7 +68,7 @@ print('Sand to fill the walls:', drop_sand(walls, part=1) == 24)
 print('Sand to reach the top:', drop_sand(walls, part=2) == 93)
 
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     test_data = inp.read()
     walls = draw_walls(test_data)

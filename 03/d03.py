@@ -37,7 +37,7 @@ print('Rucksack priorities:', calculate_total_priorities(test_data) == 157)
 print('Badge priorities:', calculate_total_badges(test_data, 3) == 70)
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     raw_data = inp.read()
     print('Rucksack priorities:', calculate_total_priorities(raw_data))
     print('Badge priorities:', calculate_total_badges(raw_data, 3))

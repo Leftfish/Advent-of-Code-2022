@@ -76,7 +76,7 @@ print('Folders below 100k:', sum(folder_sizes[folder] for folder in folder_sizes
 print('Minimum size to delete:', folder_sizes[deletion_candidates[0]] == 24933642)
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     raw_data = inp.read().splitlines()
     folder_sizes = calculate_folder_sizes(raw_data)
     unused_space = TOTAL_SPACE - folder_sizes['/']

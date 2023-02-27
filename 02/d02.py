@@ -60,7 +60,7 @@ print('Normal rules:', play_all(rounds, PLAYS, score_part1) == 15)
 print('Weird secret rules:', play_all(rounds, SECRET_PLAYS, score_part2) == 12)
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     rounds = parse_rounds(inp.readlines())
     print('Normal rules:', play_all(rounds, PLAYS, score_part1))
     print('Weird secret rules:', play_all(rounds,  SECRET_PLAYS, score_part2))

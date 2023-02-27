@@ -67,7 +67,7 @@ print('MOVER9001:', move_crates(stacks, instructions, MOVER9001) == 'MCD')
 
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     raw_data = inp.read().splitlines()
     starting_point, number_of_stacks = how_many_stacks(raw_data)
     stacks = make_stacks(raw_data, starting_point, number_of_stacks)

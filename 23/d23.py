@@ -104,6 +104,6 @@ test_data = '''....#..
 print('Testing...')
 spread_elves(get_elves(test_data.splitlines()))
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     spread_elves(get_elves(inp.read().splitlines()))

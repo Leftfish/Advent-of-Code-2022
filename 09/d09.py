@@ -90,7 +90,7 @@ print("Visited before snap:", count_visited(test_data, 2) == 13)
 print("Visited after snap:", count_visited(test_data_2, 10) == 36)
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     raw_data = inp.read()
     print("Visited before snap:", count_visited(raw_data, 2))
     print("Visited after snap:", count_visited(raw_data, 10))

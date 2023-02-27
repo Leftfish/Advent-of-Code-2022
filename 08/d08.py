@@ -79,7 +79,7 @@ print('Trees visible from the outside:', len(visible) == 21)
 print('Best scenic score:', max(scores) == 8)
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     raw_data = inp.read()
     matrix = [[chr for chr in line] for line in raw_data.splitlines()]
     visible = find_visible(matrix)

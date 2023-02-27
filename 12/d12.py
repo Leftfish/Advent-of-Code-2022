@@ -86,7 +86,7 @@ G.find_distances(G.start)
 print('Shortest distance from S:', G.distances[G.end] == 31)
 print('Shortest distance from S or any a:', find_shortest_from_lowest(G) == 29)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     data = [list(map(ord, list(line))) for line in inp.read().splitlines()]
     G = Graph(data)
