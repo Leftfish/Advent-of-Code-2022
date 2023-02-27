@@ -8,7 +8,7 @@ Again I tried to find out how far I can make it in [Advent of Code](https://adve
 
 During the first couple of days, I implemented the solution in Python first and then tried to do the same in Java (just to see if I can still write anything remotely resembling it). Then, I had to rely on hints from the awesome AoC community with days 11 (part 2), 16, 19 (part 1), 21 (part 2) and 24.
 
-As of 25.12.2022 I had 44 stars which is more/less on par with previous years. Still three puzzles (1.5 'days') to go.
+I ended up finishing the last puzzle (Day 22 part 2) in February 2023.
 
 Things I **L**earned, **R**evised or **I**mproved at in 2022:
 
@@ -33,7 +33,7 @@ Things I **L**earned, **R**evised or **I**mproved at in 2022:
 * [Day 19 Python](19/d19.py): iterative BFS (**R**) and pruning branches (**L**)
 * [Day 20 Python](20/d20.py): modular arithmetic (**I**) and circular doubly-linked lists (**R**)
 * [Day 21 Python](21/d21.py): recursion (**R**) and binary search for part 2 (**R**)
-* [Day 22 Python part 1](22/d22.py): traversing 2D grids (**R**), part 2 TO DO
+* [Day 22 Python](22/d22.py): traversing 2D grids (**R**) and hardcoding stuff in part 2
 * [Day 23 Python](23/d23.py): set operations (**R**) and enums (**R**)
 * [Day 24 Python](24/d24.py): finding the shortest path using A* (**I**) with heapq (**R**) and using modulo to calculate positions of repeating patterns (**I**)
 * [Day 25 Python](25/d25.py): balanced signed-digit representations of integers (**L**)
