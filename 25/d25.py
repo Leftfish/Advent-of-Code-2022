@@ -42,6 +42,6 @@ test_data = '''1=-0-2
 print('Testing...')
 print('Example data:', base10_to_SNAFU(sum(SNAFU_to_base10(line) for line in test_data.splitlines())) == '2=-1=0')
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     print('Actual data:', base10_to_SNAFU(sum(SNAFU_to_base10(line) for line in inp.read().splitlines())))

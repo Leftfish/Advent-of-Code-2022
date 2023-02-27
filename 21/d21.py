@@ -75,7 +75,7 @@ target = monkey_math(monkeys['root'][0], monkeys) if monkey_leader == monkeys['r
 print('Root yells:', monkey_math('root', monkeys) == 152)
 print('Human yells:', what_should_human_scream(monkey_leader, monkeys, target) == 301)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     monkeys = parse_input(inp.read())
     monkey_leader = monkeys['root'][0] if is_human_in_branch(monkeys['root'][0], monkeys) else monkeys['root'][1]

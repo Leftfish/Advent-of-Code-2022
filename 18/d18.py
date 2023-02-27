@@ -85,7 +85,7 @@ pockets_surface = check_exposure(grid - (filled | cubes))
 print('Total exposed:', sum(exposed_surface.values()) == 64)
 print('Exposed without trapped pockets:', sum(exposed_surface.values()) - sum(pockets_surface.values()) == 58)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     raw_data = inp.read()
     cubes = setup_cubes(raw_data)

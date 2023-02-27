@@ -137,7 +137,7 @@ reset(B, time, player_position)
 visited, q = setup(B)
 time, player_position = find_shortest_path(q, B)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     blizzards, board_length, board_height, player, finish = parse_board(inp.read().splitlines())
     B = Basin(blizzards, board_length, board_height, player, finish)

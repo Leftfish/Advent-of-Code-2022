@@ -86,7 +86,7 @@ max_coord = 20
 print('Occupied positions:', sum(map(abs, count_occupied(sensors, target_y)[0])) == 26)
 print('Tuning frequency:', find_tuning_frequency(sensors, max_coord) == 56000011)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     target_y = 2_000_000
     max_coord = 4_000_000

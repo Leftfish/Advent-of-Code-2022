@@ -149,7 +149,7 @@ max_with_elephant, my_path, elephant_path = go_with_elephant(AA, usable_valves, 
 print(f'Max score if you go alone: {max_score}.')
 print(f'Max score if you go with the elephant: {max_with_elephant}.')
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     valves = get_valves(inp.read())
     AA = [valve for valve in valves if valve.name == 'AA'].pop()

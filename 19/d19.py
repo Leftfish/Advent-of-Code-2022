@@ -99,7 +99,7 @@ Blueprint 2: Each ore robot costs 2 ore. Each clay robot costs 3 ore. Each obsid
 print('Testing...')
 blueprints = get_blueprints(test_data)
 print('Quality index for 24 minutes:', sum(blueprint_id * play_aoc_starcraft(blueprints[blueprint_id], 24) for blueprint_id in blueprints) == 33)
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     blueprints = get_blueprints(inp.read())
     print('Quality index for 24 minutes:', sum(blueprint_id * play_aoc_starcraft(blueprints[blueprint_id], 24) for blueprint_id in blueprints))

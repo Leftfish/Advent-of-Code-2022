@@ -136,7 +136,7 @@ g = ElephantTetris(jets)
 g.play(2022)
 print('Tower after 2022 rounds:', abs(g.top_unoccupied) == 3068)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     data = inp.read()
     real_game = ElephantTetris(data)

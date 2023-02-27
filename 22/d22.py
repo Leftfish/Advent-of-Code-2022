@@ -233,7 +233,7 @@ P.parse_instructions(moves)
 P.go()
 print('Testing part 1:', P.calculate_score() == 6032)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     inp_map = inp.read()
     raw_maze, moves = inp_map.split('\n\n')

@@ -110,7 +110,7 @@ nodes, start = setup_nodes(raw)
 apply_key_and_mix(nodes, 10)
 print('Coordinates with key:', get_coordinates(start) == 1623178306)
 
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     print('Solution...')
     data = inp.read()
     raw = list(map(int, data.splitlines()))

@@ -36,7 +36,7 @@ print('Top elf:', top_n_elves(elves, 1) == 24000)
 print('Top 3 elves:', top_n_elves(elves, 3) == 45000)
 
 print('Solution...')
-with open('inp', mode='r') as inp:
+with open('inp.dat', mode='r') as inp:
     raw_elves = inp.read().split('\n\n')
     elves = get_elf_calories(raw_elves)
     print('Top elf:', top_n_elves(elves, 1))
